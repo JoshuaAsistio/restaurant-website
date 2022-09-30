@@ -1,0 +1,403 @@
+:root {
+    --black: 0, 0, 0;
+    --violet: 92, 46, 126;
+    --mudblue: 76, 103, 147;
+    --lightblue: 139, 188, 204;
+}
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(var(--black));
+    height: max-content;
+    color: white;
+}
+
+header {
+    background: transparent;
+    margin-top: 40px;
+    width: 100vw;
+    height: max-content;
+    position: absolute;
+}
+
+header nav {
+    margin-bottom: 10vh;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+header nav ul li {
+    width: 20vw;
+}
+
+header ul li a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    color: white;
+    transform: scale(1.5);
+}
+
+header nav ul li a {
+    color: white;
+}
+
+header nav ul li a:hover {
+    color: rgb(var(--mudblue));
+    background-color: transparent;
+    transform: none;
+}
+
+.btn {
+    border: 5px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(var(--mudblue));
+}
+
+#welcome {
+    background-image: url(cafe-g28b7aebc7_1920.jpg);
+    height: max-content;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50vh;
+    margin-bottom: 30px;
+    background-color: rgba(var(--violet), 0.9);
+    background-blend-mode: multiply;
+    padding-bottom: 5vh;
+}
+
+@media (max-width: 1440px) {
+    #welcome {
+        padding-top: 55vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    #welcome {
+        margin-bottom: 10px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 5vw;
+    color: white;
+    margin-bottom: 35vh;
+}
+
+@media (max-width: 1440px) {
+    #welcome h1 {
+        margin-bottom: 30vh;
+    }
+}
+
+#welcome img {
+    height: 7vh;
+    width: 7vw;
+}
+
+@media (max-height: 768px) and (orientation: portrait) {
+    #welcome img {
+        margin-right: 20px;
+    }
+
+    .socials {
+        margin-left: 5vw;
+    }
+}
+
+#welcome a:hover {
+    transform: scale(2);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+#about {
+    height: 100%;
+    width: 100vw;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+@media (max-width: 1440px) {
+    #about {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #about p {
+        line-height: 20px;
+    }
+
+    #about {
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    #about {
+        padding-left: 7px;
+    }
+}
+
+#about h2 {
+    font-size: 2vw;
+}
+
+.bottom-margin {
+    margin-bottom: 10px;
+}
+
+#about hr {
+    height: 0.5vh;
+    width: 96vw;
+    background-color: white;
+}
+
+@media (max-height: 768px) and (orientation: portrait) {
+    #about hr {
+        width: 94vw;
+    }
+}
+
+@media (max-height: 425px) and (orientation: landscape) {
+    #about hr {
+        width: 94vw;
+    }
+}
+
+#menu {
+    height: max-content;
+    width: 100vw;
+    padding-right: 45px;
+    margin-bottom: 150px;
+}
+
+#menu img {
+    height: 60vh;
+    width: 60vw;
+    object-fit: cover;
+    float: left;
+    margin-right: 35px;
+}
+
+@media (max-height: 425px) and (orientation: landscape) {
+    #menu img {
+        margin-right: 10px;
+    }
+}
+
+#menu h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+#menu p {
+    font-size: 1.5vw;
+    line-height: 50px; 
+}
+
+@media (max-width: 1440px) {
+    #menu p {
+        line-height: 30px;
+    }
+
+    #menu {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 1366px) {
+    #menu {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #menu {
+        margin-bottom: 30px;
+    }
+
+    #menu p {
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu p {
+        line-height: 25px;
+    }
+}
+
+@media (max-height: 768px) and (orientation: portrait) {
+    #menu {
+        margin-bottom: 30px;
+    }
+
+    #menu img {
+        height: 60vh;
+        width: 100vw;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #menu p {
+        line-height: 10px;
+        margin-left: 10px;
+    }
+
+    #menu hr {
+        width: 93vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-height: 425px) and (orientation: landscape) {
+
+    #menu img {
+        width: 100vw;
+    }
+
+    #menu p {
+        line-height: 15px;
+        margin-left: 5px;
+    }
+
+    #menu hr {
+        width: 95vw;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    #menu p {
+        margin-left: 3px;
+    }
+
+    #menu hr {
+        margin-left: 3px;
+        width: 96vw;
+    }
+}
+
+#menu hr {
+    height: 0.5vh;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+#private-hire {
+    height: max-content;
+    width: 100vw;
+    background-image: url(brick-wall-g7ff4b7f22_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(var(--violet), 0.7);
+    background-blend-mode: multiply;
+    padding: 160px 0 200px 0;
+}
+
+@media (max-width: 1440px) {
+    #private-hire {
+        height: max-content;
+    }
+}
+
+#private-hire p {
+    font-size: 3vw;
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+#private-hire a {
+    text-decoration: none;
+    border: 5px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 2vw;
+}
+
+#private-hire a:hover {
+    background-color: rgb(var(--mudblue));
+    color: white;
+    transform: scale(2);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    padding: 30px;
+}
+
+footer div {
+    margin-right: 50px;
+}
+
+@media (max-height: 425px) and (orientation: landscape) {
+    footer div {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    footer div {
+        margin-right: 20px;
+    }
+}
+
+@media (max-height: 465px) and (orientation: landscape) {
+    footer div {
+        margin-right: 10px;
+    }
+}
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div h2 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+footer div ul li {
+    font-size: 1.1vw;
+    text-align: center;
+}
